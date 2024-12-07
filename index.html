@@ -2,65 +2,186 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTS Heróis: A Transformação Super</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BTS como Heróis</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+  <!-- Navegação -->
   <nav>
     <ul>
-      <li><a href="#">BTS Heróis: A Transformação Super</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
   
-  <main>
+  <!-- Conteúdo Principal -->
+  <main id="home">
+    <h1>BTS Heróis</h1>
+    <p class="intro-text">
+      Bem-vindo ao BTS Heróis! Clique ou passe o mouse sobre os membros para ver suas transformações heroicas.
+    </p>
     <div class="cards">
-        <div class="card" id="card1">
-            <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/fd/dc/34/fddc343235ac2990f9432c8515846fd3.jpg');">
-                <div class="card-text">Jungkook</div>
-            </div>
-            <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/564x/03/b2/78/03b2788e1be5837624e2133fe7875f19.jpg');"></div>
+      <!-- Jungkook -->
+      <div class="card" tabindex="0" aria-label="Jungkook, o Protetor">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/fd/dc/34/fddc343235ac2990f9432c8515846fd3.jpg');">
+            <div class="card-text">Jungkook</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/564x/03/b2/78/03b2788e1be5837624e2133fe7875f19.jpg');">
+            <div class="hero-text">Jungkook, o Protetor</div>
+          </div>
         </div>
-      <!-- Repita para os outros cards -->
-       <div class="card" id="card1">
-        <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/fe/1f/6a/fe1f6a7157770ed84fbf4b2747baa0a4.jpg');">
-          <div class="card-text">RM</div>
-        </div>
-        <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/a3/d4/33/a3d433d7651d1b394129d2c903d38be2.jpg');"></div>
       </div>
-      <div class="card" id="card1">
-        <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/ce/d3/78/ced37830d4f4ed09b273acaafce3c678.jpg');">
-          <div class="card-text">Suga</div>
+      
+      <!-- RM -->
+      <div class="card" tabindex="0" aria-label="RM, o Estrategista">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/fe/1f/6a/fe1f6a7157770ed84fbf4b2747baa0a4.jpg');">
+            <div class="card-text">RM</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/236x/a3/d4/33/a3d433d7651d1b394129d2c903d38be2.jpg');">
+            <div class="hero-text">RM, o Estrategista</div>
+          </div>
         </div>
-        <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/f1/7f/21/f17f2168e81efdd0fd6d7ccc4510a4a3.jpg');"></div>
       </div>
-      <div class="card" id="card1">
-        <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/58/ce/87/58ce87b3fc6ef8df3a4f396194101e1f.jpg');">
-          <div class="card-text">Jin</div>
+      
+      <!-- Suga -->
+      <div class="card" tabindex="0" aria-label="Suga, o Mestre das Artes">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/ce/d3/78/ced37830d4f4ed09b273acaafce3c678.jpg');">
+            <div class="card-text">Suga</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/236x/f1/7f/21/f17f2168e81efdd0fd6d7ccc4510a4a3.jpg');">
+            <div class="hero-text">Suga, o Mestre das Artes</div>
+          </div>
         </div>
-        <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/61/8d/a3/618da3735096034a70b6f3278306d0d3.jpg');"></div>
       </div>
-      <div class="card" id="card1">
-        <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/5c/70/af/5c70af254bbcc642485ac9ac2a58568b.jpg');">
-          <div class="card-text">J-Hope</div>
+      
+      <!-- Jin -->
+      <div class="card" tabindex="0" aria-label="Jin, o Guerreiro Valente">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/58/ce/87/58ce87b3fc6ef8df3a4f396194101e1f.jpg');">
+            <div class="card-text">Jin</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/236x/61/8d/a3/618da3735096034a70b6f3278306d0d3.jpg');">
+            <div class="hero-text">Jin, o Guerreiro Valente</div>
+          </div>
         </div>
-        <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/22/e3/03/22e303614be0a2b0c94f775aaa0146a7.jpg');"></div>
       </div>
-      <div class="card" id="card1">
-        <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/59/5c/32/595c329f26019a1331dcf5df3b042ea7.jpg');">
-          <div class="card-text">V</div>
+      
+      <!-- J-Hope -->
+      <div class="card" tabindex="0" aria-label="J-Hope, o Animador">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/5c/70/af/5c70af254bbcc642485ac9ac2a58568b.jpg');">
+            <div class="card-text">J-Hope</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/236x/22/e3/03/22e303614be0a2b0c94f775aaa0146a7.jpg');">
+            <div class="hero-text">J-Hope, o Animador</div>
+          </div>
         </div>
-        <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/564x/90/1d/39/901d396e895acaead81e334d20c482fc.jpg');"></div>
       </div>
-      <div class="card" id="card1">
-        <div class="front" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/f5/f9/25/f5f925da273f267d12ee0242f7fa4c74.jpg');">
-          <div class="card-text">Jimin</div>
+      
+      <!-- V -->
+      <div class="card" tabindex="0" aria-label="V, o Visionário">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/59/5c/32/595c329f26019a1331dcf5df3b042ea7.jpg');">
+            <div class="card-text">V</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/564x/90/1d/39/901d396e895acaead81e334d20c482fc.jpg');">
+            <div class="hero-text">V, o Visionário</div>
+          </div>
         </div>
-        <div class="back" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://i.pinimg.com/236x/a3/b3/81/a3b3814e153e06f2db436a5dce81f2f2.jpg');"></div>
+      </div>
+      
+      <!-- Jimin -->
+      <div class="card" tabindex="0" aria-label="Jimin, o Ágil">
+        <div class="card-inner">
+          <div class="front" style="background-image: url('https://i.pinimg.com/236x/f5/f9/25/f5f925da273f267d12ee0242f7fa4c74.jpg');">
+            <div class="card-text">Jimin</div>
+          </div>
+          <div class="back" style="background-image: url('https://i.pinimg.com/236x/a3/b3/81/a3b3814e153e06f2db436a5dce81f2f2.jpg');">
+            <div class="hero-text">Jimin, o Ágil</div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
+
+  <!-- Seção Sobre -->
+  <section id="sobre" class="about-section">
+    <h2>Sobre</h2>
+    <p>
+      **BTS Heróis** é um projeto dedicado a transformar os membros do BTS em verdadeiros heróis, cada um com suas habilidades únicas. Nosso objetivo é celebrar a dedicação, talento e espírito de equipe que fazem do BTS um grupo tão especial.
+    </p>
+    <p>
+      Navegue pelos cartões, descubra mais sobre cada membro e veja como eles se transformam em defensores do bem. Junte-se a nós nessa jornada heroica!
+    </p>
+  </section>
+
+  <!-- Seção Galeria -->
+  <section id="galeria" class="gallery-section">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <!-- Item da Galeria 1 -->
+      <div class="gallery-item">
+        <img src="img/galeria1.jpg" alt="Descrição da Imagem 1">
+      </div>
+      <!-- Item da Galeria 2 -->
+      <div class="gallery-item">
+        <img src="img/galeria2.jpg" alt="Descrição da Imagem 2">
+      </div>
+      <!-- Item da Galeria 3 -->
+      <div class="gallery-item">
+        <img src="img/galeria3.png" alt="Descrição da Imagem 3">
+      </div>
+      <!-- Adicione mais itens conforme necessário -->
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="contact-section">
+    <h2>Contato</h2>
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Modal para Detalhes dos Heróis -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <div class="modal-content">
+      <button class="close" aria-label="Fechar">&times;</button>
+      <h2 id="modal-title">Título</h2>
+      <p id="modal-description">Descrição detalhada do herói.</p>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2024 BTS Heróis. Todos os direitos reservados.</p>
+    <p><a href="mailto:contato@btsheroes.com">contato@btsheroes.com</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
 </body>
 </html>
