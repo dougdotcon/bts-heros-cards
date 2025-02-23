@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BTS como Heróis</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Navegação -->
@@ -14,16 +15,18 @@
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#poderes">Poderes</a></li>
       <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#historia">História</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
   
   <!-- Conteúdo Principal -->
   <main id="home">
-    <h1>BTS Heróis</h1>
-    <p class="intro-text">
-      Bem-vindo ao BTS Heróis! Clique ou passe o mouse sobre os membros para ver suas transformações heroicas.
+    <h1 class="animate-title">BTS Heróis</h1>
+    <p class="intro-text animate-fade-in">
+      Bem-vindo ao universo onde música e heroísmo se encontram! Descubra como cada membro do BTS se transforma em um herói único, usando seus talentos especiais para proteger e inspirar o mundo.
     </p>
     <div class="cards">
       <!-- Jungkook -->
@@ -113,14 +116,119 @@
   </main>
 
   <!-- Seção Sobre -->
-  <section id="sobre" class="about-section">
-    <h2>Sobre</h2>
-    <p>
-      **BTS Heróis** é um projeto dedicado a transformar os membros do BTS em verdadeiros heróis, cada um com suas habilidades únicas. Nosso objetivo é celebrar a dedicação, talento e espírito de equipe que fazem do BTS um grupo tão especial.
-    </p>
-    <p>
-      Navegue pelos cartões, descubra mais sobre cada membro e veja como eles se transformam em defensores do bem. Junte-se a nós nessa jornada heroica!
-    </p>
+  <section id="sobre" class="about-section animate-on-scroll">
+    <h2>Sobre os Heróis</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Em um mundo onde a música tem o poder de transformar vidas, sete jovens artistas descobrem que seus talentos vão muito além das melodias. Cada membro do BTS possui habilidades únicas que os transformam em verdadeiros heróis.
+        </p>
+        <p>
+          Unidos, eles formam uma equipe imbatível que luta contra as forças da negatividade, do preconceito e da injustiça. Sua missão é espalhar amor, esperança e coragem através de suas músicas e ações heroicas.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <i class="fas fa-music"></i>
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Músicas Transformadas em Poder</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-users"></i>
+          <span class="stat-number">7</span>
+          <span class="stat-label">Heróis Unidos</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-globe"></i>
+          <span class="stat-number">Milhões</span>
+          <span class="stat-label">de Vidas Impactadas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Poderes -->
+  <section id="poderes" class="powers-section animate-on-scroll">
+    <h2>Poderes Especiais</h2>
+    <div class="powers-grid">
+      <div class="power-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Proteção</h3>
+        <p>Jungkook usa sua agilidade e força para proteger os inocentes</p>
+      </div>
+      <div class="power-card">
+        <i class="fas fa-brain"></i>
+        <h3>Estratégia</h3>
+        <p>RM possui inteligência superior e capacidade de liderança</p>
+      </div>
+      <div class="power-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Criatividade</h3>
+        <p>Suga transforma emoções em energia pura através de sua arte</p>
+      </div>
+      <div class="power-card">
+        <i class="fas fa-star"></i>
+        <h3>Luz Interior</h3>
+        <p>Jin emana uma aura de positividade que fortalece a equipe</p>
+      </div>
+      <div class="power-card">
+        <i class="fas fa-sun"></i>
+        <h3>Esperança</h3>
+        <p>J-Hope irradia esperança que cura e revitaliza</p>
+      </div>
+      <div class="power-card">
+        <i class="fas fa-eye"></i>
+        <h3>Visão</h3>
+        <p>V pode ver através das dimensões e prever o futuro</p>
+      </div>
+      <div class="power-card">
+        <i class="fas fa-wind"></i>
+        <h3>Agilidade</h3>
+        <p>Jimin move-se com graça sobrenatural e velocidade</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção História -->
+  <section id="historia" class="story-section animate-on-scroll">
+    <h2>A História dos Heróis</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2013</div>
+        <div class="timeline-content">
+          <h3>O Despertar</h3>
+          <p>Os sete jovens artistas descobrem seus poderes especiais</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2015</div>
+        <div class="timeline-content">
+          <h3>Primeira Missão</h3>
+          <p>Unidos pela primeira vez para salvar a cidade da escuridão</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2017</div>
+        <div class="timeline-content">
+          <h3>Reconhecimento Global</h3>
+          <p>Seus feitos heroicos começam a ser notados mundialmente</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2020</div>
+        <div class="timeline-content">
+          <h3>O Grande Desafio</h3>
+          <p>Enfrentam sua maior ameaça e emergem mais fortes</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2023</div>
+        <div class="timeline-content">
+          <h3>Legado</h3>
+          <p>Inspiram uma nova geração de heróis pelo mundo</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Seção Galeria -->
@@ -175,10 +283,46 @@
     </div>
   </div>
 
-  <!-- Rodapé -->
+  <!-- Seção Newsletter -->
+  <section class="newsletter-section animate-on-scroll">
+    <h2>Fique por Dentro</h2>
+    <p>Receba as últimas notícias sobre as missões e aventuras dos nossos heróis!</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Seu email" required>
+      <button type="submit">Inscrever-se</button>
+    </form>
+  </section>
+
+  <!-- Rodapé Expandido -->
   <footer>
-    <p>© 2024 BTS Heróis. Todos os direitos reservados.</p>
-    <p><a href="mailto:contato@btsheroes.com">contato@btsheroes.com</a></p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>BTS Heróis</h3>
+        <p>Transformando o mundo através da música e heroísmo.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Redes Sociais</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#poderes">Poderes</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 BTS Heróis. Todos os direitos reservados.</p>
+      <p><a href="mailto:contato@btsheroes.com">contato@btsheroes.com</a></p>
+    </div>
   </footer>
 
   <!-- Scripts -->

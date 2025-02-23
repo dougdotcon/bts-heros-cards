@@ -73,3 +73,113 @@ $(document).ready(function() {
         }
     });
 });
+
+// Função para verificar se um elemento está visível na viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Função para animar elementos quando eles entram na viewport
+function handleScrollAnimations() {
+  const elements = document.querySelectorAll('.animate-on-scroll');
+  elements.forEach(element => {
+    if (isElementInViewport(element)) {
+      element.classList.add('visible');
+    }
+  });
+
+  // Animar itens da timeline separadamente
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  timelineItems.forEach(item => {
+    if (isElementInViewport(item)) {
+      item.classList.add('visible');
+    }
+  });
+}
+
+// Contador para estatísticas
+function animateNumbers() {
+  const stats = document.querySelectorAll('.stat-number');
+  stats.forEach(stat => {
+    const target = parseInt(stat.textContent);
+    if (isNaN(target)) return;
+    
+    let current = 0;
+    const increment = target / 50;
+    const duration = 1500;
+    const step = duration / 50;
+
+    const counter = setInterval(() => {
+      current += increment;
+      if (current >= target) {
+        clearInterval(counter);
+        current = target;
+      }
+      stat.textContent = Math.floor(current);
+    }, step);
+  });
+}
+
+// Smooth scroll para links de navegação
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+// Event listeners
+window.addEventListener('scroll', handleScrollAnimations);
+window.addEventListener('load', () => {
+  handleScrollAnimations();
+  animateNumbers();
+});
+
+// Animação do menu mobile
+const navItems = document.querySelectorAll('nav ul li');
+navItems.forEach((item, index) => {
+  item.style.animation = `fadeIn 0.5s ease forwards ${index * 0.1}s`;
+});
+
+// Efeito parallax suave no header
+window.addEventListener('scroll', () => {
+  const scrolled = window.pageYOffset;
+  const header = document.querySelector('main');
+  header.style.transform = `translateY(${scrolled * 0.4}px)`;
+});
+
+// Animação dos power cards
+const powerCards = document.querySelectorAll('.power-card');
+powerCards.forEach(card => {
+  card.addEventListener('mouseenter', () => {
+    card.style.transform = 'translateY(-10px) scale(1.05)';
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0) scale(1)';
+  });
+});
+
+// Newsletter form
+const newsletterForm = document.querySelector('.newsletter-form');
+if (newsletterForm) {
+  newsletterForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = newsletterForm.querySelector('input[type="email"]').value;
+    // Aqui você pode adicionar a lógica para enviar o email para seu backend
+    alert('Obrigado por se inscrever! Em breve você receberá nossas novidades.');
+    newsletterForm.reset();
+  });
+}
